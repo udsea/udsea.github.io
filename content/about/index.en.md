@@ -35,7 +35,3 @@ A running log of songs, albums, and live versions I keep returning to.
 ## Why A Personal Site
 
 Social feeds bury good writing. A personal site is easier to search, easier to update, and easier to own over time.
-
-## Replace Before Publishing
-
-Before you push this live as your final version, replace this page with your actual background, role, interests, and the exact public name you want Google to associate with the site.
