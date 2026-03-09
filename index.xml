@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Udbhav</title><link>https://udsea.github.io/</link><description>Recent content on Udbhav</description><generator>Hugo</generator><language>en</language><atom:link href="https://udsea.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Why I Kept A Music Page</title><link>https://udsea.github.io/post/2026-03-09-why-i-kept-a-music-page/</link><pubDate>Mon, 09 Mar 2026 21:30:00 +0530</pubDate><guid>https://udsea.github.io/post/2026-03-09-why-i-kept-a-music-page/</guid><description>&lt;p&gt;I did not want the music part of the site to be an afterthought hidden in bookmarks or playlist screenshots.&lt;/p&gt;
+&lt;p&gt;A small dedicated page is enough:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;it gives me a place to keep a hand-picked list&lt;/li&gt;
+&lt;li&gt;it lets me add context when a song matters for a specific reason&lt;/li&gt;
+&lt;li&gt;it keeps the site personal instead of purely professional&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Notes Worth Keeping</title><link>https://udsea.github.io/post/2026-03-09-notes-worth-keeping/</link><pubDate>Mon, 09 Mar 2026 21:20:00 +0530</pubDate><guid>https://udsea.github.io/post/2026-03-09-notes-worth-keeping/</guid><description>&lt;p&gt;Not everything needs to be a full technical article.&lt;/p&gt;
+&lt;p&gt;Some ideas are better captured as short notes: things I noticed, decisions I made, links I want to remember, or small observations from the day that are still worth writing down.&lt;/p&gt;
+&lt;p&gt;This section is for that kind of writing.&lt;/p&gt;</description></item><item><title>What Will Show Up Here</title><link>https://udsea.github.io/post/2026-03-09-what-will-show-up-here/</link><pubDate>Mon, 09 Mar 2026 21:10:00 +0530</pubDate><guid>https://udsea.github.io/post/2026-03-09-what-will-show-up-here/</guid><description>&lt;p&gt;The technical side of this site is for posts that deserve more room than a thread or a README update.&lt;/p&gt;
+&lt;p&gt;Expect things like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;implementation notes after building or debugging something&lt;/li&gt;
+&lt;li&gt;architecture tradeoffs that are easier to explain with examples&lt;/li&gt;
+&lt;li&gt;practical write-ups that start from a real problem and end with a working fix&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If a post saves me from relearning something six months later, it belongs here.&lt;/p&gt;</description></item><item><title>Start Here</title><link>https://udsea.github.io/post/2026-03-09-start-here/</link><pubDate>Mon, 09 Mar 2026 21:00:00 +0530</pubDate><guid>https://udsea.github.io/post/2026-03-09-start-here/</guid><description>&lt;p&gt;This site has three lanes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;technical write-ups when I want to explain something properly&lt;/li&gt;
+&lt;li&gt;shorter notes on day-to-day affairs when an idea is still fresh&lt;/li&gt;
+&lt;li&gt;a music page for songs that survive repeated listening&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The homepage stays simple on purpose. This pinned post acts as the map, and the rest of the page stays reserved for the latest writing.&lt;/p&gt;
+&lt;h2 id="what-to-expect" id=what-to-expect&gt;
+ 
+ &lt;span class="me-2"&gt;What To Expect&lt;/span&gt;
+ &lt;a href="#what-to-expect" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;p&gt;The technical posts will be slower and more detailed.&lt;/p&gt;</description></item><item><title>Music</title><link>https://udsea.github.io/music/</link><pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate><guid>https://udsea.github.io/music/</guid><description>&lt;p&gt;This is where I keep a short public list of songs and records worth replaying.&lt;/p&gt;
+&lt;h2 id="current-rotation" id=current-rotation&gt;
+ 
+ &lt;span class="me-2"&gt;Current Rotation&lt;/span&gt;
+ &lt;a href="#current-rotation" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Replace this line with a song title and artist.&lt;/li&gt;
+&lt;li&gt;Replace this line with another track you keep coming back to.&lt;/li&gt;
+&lt;li&gt;Add a live version, remix, or album cut when it matters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="why-keep-a-music-page" id=why-keep-a-music-page&gt;
+ 
+ &lt;span class="me-2"&gt;Why Keep A Music Page&lt;/span&gt;
+ &lt;a href="#why-keep-a-music-page" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;p&gt;Good songs disappear into playlists too easily. A small hand-picked list is a better record of taste than an endlessly growing library.&lt;/p&gt;</description></item><item><title>Updates</title><link>https://udsea.github.io/updates/</link><pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate><guid>https://udsea.github.io/updates/</guid><description>&lt;p&gt;This page is for quick status notes about the site and what I am actively working on.&lt;/p&gt;
+&lt;h2 id="march-2026" id=march-2026&gt;
+ 
+ &lt;span class="me-2"&gt;March 2026&lt;/span&gt;
+ &lt;a href="#march-2026" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Laid out the site around technical writing, short-form notes, and music.&lt;/li&gt;
+&lt;li&gt;Cleaned out the starter content and turned the homepage into a live feed of the latest posts.&lt;/li&gt;
+&lt;li&gt;Added the basic SEO plumbing: sitemap, robots rules, favicon assets, and Google Analytics configuration hooks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="what-comes-next" id=what-comes-next&gt;
+ 
+ &lt;span class="me-2"&gt;What Comes Next&lt;/span&gt;
+ &lt;a href="#what-comes-next" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Publish the first real technical deep dive.&lt;/li&gt;
+&lt;li&gt;Keep this page current with what is new instead of treating the homepage like a changelog.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Writing</title><link>https://udsea.github.io/writing/</link><pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate><guid>https://udsea.github.io/writing/</guid><description>&lt;p&gt;This section holds the longer pieces.&lt;/p&gt;
+&lt;p&gt;The split is simple:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Technical write-ups for software, systems, and implementation details.&lt;/li&gt;
+&lt;li&gt;Day-to-day notes for shorter reflections and public thinking.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The homepage shows the newest posts first. The archive shows everything in one place when the list gets longer.&lt;/p&gt;</description></item><item><title>About</title><link>https://udsea.github.io/about/</link><pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate><guid>https://udsea.github.io/about/</guid><description>&lt;p&gt;This site is the long-form version of my notes.&lt;/p&gt;
+&lt;p&gt;I use it for three things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Technical write-ups that are too detailed for social posts.&lt;/li&gt;
+&lt;li&gt;Shorter notes on day-to-day affairs, ideas, and things worth keeping.&lt;/li&gt;
+&lt;li&gt;A music page for songs that stay in rotation longer than a week.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="what-you-will-find-here" id=what-you-will-find-here&gt;
+ 
+ &lt;span class="me-2"&gt;What You Will Find Here&lt;/span&gt;
+ &lt;a href="#what-you-will-find-here" class="anchor text-muted"&gt;&lt;i class="fas fa-hashtag"&gt;&lt;/i&gt;&lt;/a&gt;
+ 
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Technical writing&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Architecture notes, debugging stories, implementation details, and practical lessons from building software.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Day-to-day notes&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Archive</title><link>https://udsea.github.io/archives/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://udsea.github.io/archives/</guid><description/></item></channel></rss>

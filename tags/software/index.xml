@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software on Udbhav</title><link>https://udsea.github.io/tags/software/</link><description>Recent content in Software on Udbhav</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 09 Mar 2026 23:25:27 +0530</lastBuildDate><atom:link href="https://udsea.github.io/tags/software/index.xml" rel="self" type="application/rss+xml"/><item><title>What Will Show Up Here</title><link>https://udsea.github.io/post/2026-03-09-what-will-show-up-here/</link><pubDate>Mon, 09 Mar 2026 21:10:00 +0530</pubDate><guid>https://udsea.github.io/post/2026-03-09-what-will-show-up-here/</guid><description>&lt;p&gt;The technical side of this site is for posts that deserve more room than a thread or a README update.&lt;/p&gt;
+&lt;p&gt;Expect things like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;implementation notes after building or debugging something&lt;/li&gt;
+&lt;li&gt;architecture tradeoffs that are easier to explain with examples&lt;/li&gt;
+&lt;li&gt;practical write-ups that start from a real problem and end with a working fix&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If a post saves me from relearning something six months later, it belongs here.&lt;/p&gt;</description></item></channel></rss>

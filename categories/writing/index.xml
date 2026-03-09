@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Writing on Udbhav</title><link>https://udsea.github.io/categories/writing/</link><description>Recent content in Writing on Udbhav</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 09 Mar 2026 23:25:27 +0530</lastBuildDate><atom:link href="https://udsea.github.io/categories/writing/index.xml" rel="self" type="application/rss+xml"/><item><title>Notes Worth Keeping</title><link>https://udsea.github.io/post/2026-03-09-notes-worth-keeping/</link><pubDate>Mon, 09 Mar 2026 21:20:00 +0530</pubDate><guid>https://udsea.github.io/post/2026-03-09-notes-worth-keeping/</guid><description>&lt;p&gt;Not everything needs to be a full technical article.&lt;/p&gt;
+&lt;p&gt;Some ideas are better captured as short notes: things I noticed, decisions I made, links I want to remember, or small observations from the day that are still worth writing down.&lt;/p&gt;
+&lt;p&gt;This section is for that kind of writing.&lt;/p&gt;</description></item><item><title>What Will Show Up Here</title><link>https://udsea.github.io/post/2026-03-09-what-will-show-up-here/</link><pubDate>Mon, 09 Mar 2026 21:10:00 +0530</pubDate><guid>https://udsea.github.io/post/2026-03-09-what-will-show-up-here/</guid><description>&lt;p&gt;The technical side of this site is for posts that deserve more room than a thread or a README update.&lt;/p&gt;
+&lt;p&gt;Expect things like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;implementation notes after building or debugging something&lt;/li&gt;
+&lt;li&gt;architecture tradeoffs that are easier to explain with examples&lt;/li&gt;
+&lt;li&gt;practical write-ups that start from a real problem and end with a working fix&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If a post saves me from relearning something six months later, it belongs here.&lt;/p&gt;</description></item></channel></rss>
