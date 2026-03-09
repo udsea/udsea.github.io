@@ -10,17 +10,28 @@ menu:
     pre: fa-info-circle
 ---
 
-[Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) is a blog theme originally based on [Jekyll](https://jekyllrb.com/). Due to Jekyll's design limitations, it does not natively support internationalization (i18n) and requires third-party plugins for i18n functionality. To enable i18n support for Chirpy without the hassle of relying on third-party plugins, the [hugo-theme-chirpy](https://github.com/geekifan/hugo-theme-chirpy) project migrated the Chirpy theme to [Hugo](https://gohugo.io/) with minimal adaptations. All features of Chirpy are available in hugo-theme-chirpy (though some functionalities may operate differently within the Hugo framework).
+This site is the long-form version of my notes.
 
-Follow the posts in the demo site to quickly set up a free personal blog!
-## Features
+I use it for three things:
 
-- **Dark Mode**: Enhanced readability in low-light environments.
-- **Multilingual UI:** Easily switch between different languages.
-- **Efficient Post Organization:** Use hierarchical categories, trending tags, recommended reading, and search functionalities.
-- **Optimized Layout:** Includes TOC, syntax highlighting, prompts, and more.
-- **Rich Writing Extensions:** Support for mathematical formulas, charts, flowcharts, and embedded media.
-- **Multiple Comment Systems:** Choose from various commenting options.
-- **Web Analysis Tools:** Integrated with multiple analytics tools.
-- **Modern Web Technologies:** Built for SEO and web performance.
-- **RSS Feed Support:** Keep your readers updated with RSS feeds.
+- Technical write-ups that are too detailed for social posts.
+- Shorter notes on day-to-day affairs, ideas, and things worth keeping.
+- A music page for songs that stay in rotation longer than a week.
+
+## What You Will Find Here
+
+**Technical writing**
+
+Architecture notes, debugging stories, implementation details, and practical lessons from building software.
+
+**Day-to-day notes**
+
+Short reflections, observations, and links that are too useful to lose in a chat thread or bookmark pile.
+
+**Music**
+
+A running log of songs, albums, and live versions I keep returning to.
+
+## Why A Personal Site
+
+Social feeds bury good writing. A personal site is easier to search, easier to update, and easier to own over time.
