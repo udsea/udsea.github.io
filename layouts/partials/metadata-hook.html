@@ -1,0 +1,15 @@
+{{ with or .Description site.Params.description }}
+  <meta name="description" content="{{ . | plainify }}">
+{{ end }}
+
+{{ with site.Params.keywords }}
+  <meta name="keywords" content="{{ delimit . ", " }}">
+{{ end }}
+
+{{ with site.Params.social.name }}
+  <meta name="author" content="{{ . }}">
+{{ end }}
+
+{{ with site.Params.verification.google }}
+  <meta name="google-site-verification" content="{{ . }}">
+{{ end }}
