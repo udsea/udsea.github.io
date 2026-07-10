@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Software, systems, research tools, and writing.
+subtitle: Evaluation, agent oversight, causal reasoning, and research tools.
 
 profile:
   align: right
@@ -26,8 +26,29 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Udbhav. This site is my home for projects, technical writing, research notes, and public work.
+I am Udbhav. I build evaluation systems for language models and coding agents, with a focus on failure modes that ordinary benchmark scores can miss: format-sensitive safety behavior, shortcut-seeking under pressure, causal reasoning errors, and action-level oversight for autonomous tools.
 
-The site uses the [al-folio](https://github.com/alshedivat/al-folio) academic website template, so it is ready for publications, project pages, a CV, notes, and GitHub repository cards. I have left the content intentionally lightweight until the final biography, publications, CV, and project descriptions are filled in.
+My work is mostly practical and empirical. I like small benchmarks with clear threat models, reproducible runners, explicit limitations, and artifacts that another engineer can inspect. The common thread is control: how to tell whether a model is doing the task for the right reason, whether an evaluation protocol is measuring deployment behavior, and whether an agent's proposed action is safe before it touches the environment.
+
+This website collects research scaffolds, experiments, and notes as they mature from prototypes into sharper benchmarks or writeups.
+
+## Purpose
+
+The purpose of this site is to make my work easier to audit. Each project should eventually answer four questions:
+
+- What behavior is being measured?
+- What can the current evidence support?
+- What are the main limitations?
+- What would make the result stronger?
+
+## Current Direction
+
+I am especially interested in:
+
+- coding-agent control protocols that inspect proposed actions before execution
+- monitors that separate task success from suspicious behavior
+- LLM safety evaluations where prompt format changes measured behavior
+- causal reasoning benchmarks with known ground truth intervention effects
+- pressure tests for shortcut-seeking, specification gaming, and oversight gaps
 
 For now, the best public links are email and GitHub.

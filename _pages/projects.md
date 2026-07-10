@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Selected work and experiments.
+description: Selected evaluation, control, and research-tooling projects.
 nav: true
 nav_order: 3
 display_categories: []
