@@ -1,40 +1,36 @@
-# Hugo Theme Chirpy Starter Template
+# udsea.github.io
 
-This is a quick start template for [Hugo Theme Chirpy](https://github.com/geekifan/hugo-theme-chirpy). It uses [Hugo modules](https://gohugo.io/hugo-modules/) feature to load the theme.
+Personal website for Udbhav, built with the [`al-folio`](https://github.com/alshedivat/al-folio) Jekyll template.
 
-It comes with a basic theme structure and configuration. GitHub action has been set up to deploy the theme to a public GitHub page automatically. Also, there's a cron job to update the theme automatically everyday.
+## Site Settings
 
-## Get started
+The main site configuration is in `_config.yml`.
 
-1. Click *Use this template*, and create your repository as `<username>.github.io` on GitHub.
-![Step 1](https://user-images.githubusercontent.com/5889006/156916624-20b2a784-f3a9-4718-aa5f-ce2a436b241f.png)
+Important values for this GitHub Pages user site:
 
-2. Once the repository is created, create a GitHub codespace associated with it.
-![Create codespace](https://user-images.githubusercontent.com/5889006/156916672-43b7b6e9-4ffb-4704-b4ba-d5ca40ffcae7.png)
-
-3. And voila! You're ready to go. The codespace has been configured with the latest version of Hugo extended, just run `hugo server` in the terminal and see your new site in action.
-
-4. Check `config` folder for the configuration files. You can edit them to suit your needs. Make sure to update the `baseURL` property in `hugo.toml` to your site's URL.
-
-5. Open Settings -> Pages. Change the build branch from `main` to `gh-pages`.
-![Build](https://github.com/namanh11611/hugo-theme-stack-starter/assets/16586200/12c763cd-bead-4923-b610-8788f388fcb5)
-
-6. Once you're done editing the site, just commit it and push it. GitHub action will deploy the site automatically to GitHub page asociated with the repository.
-![GitHub action](https://user-images.githubusercontent.com/5889006/156916881-90b8bb9b-1925-4e60-9d7a-8026cda729bf.png)
-
----
-
-In case you don't want to use GitHub codespace, you can also run this template in your local machine. **You need to install Git, Go and Hugo extended locally.**
-
-## Update theme manually
-
-Run:
-
-```bash
-hugo mod get -u github.com/geekifan/hugo-theme-chirpy
-hugo mod tidy
+```yml
+url: https://udsea.github.io
+baseurl:
 ```
 
-## Credits
+Keep `baseurl` empty for the root `udsea.github.io` site.
 
-This README is modified from [hugo-theme-stack-starter](https://github.com/CaiJimmy/hugo-theme-stack-starter).
+## Content
+
+- Homepage bio: `_pages/about.md`
+- Publications: `_bibliography/papers.bib`
+- Projects: `_projects/`
+- Blog posts: `_posts/`
+- Social links: `_data/socials.yml`
+- Repository cards: `_data/repositories.yml`
+
+## Deploy
+
+The al-folio deployment workflow is `.github/workflows/deploy.yml`. It builds the Jekyll site and publishes `_site` to the `gh-pages` branch through GitHub Actions.
+
+GitHub Pages should use:
+
+- Source: deploy from a branch
+- Branch: `gh-pages`
+
+The workflow currently triggers on `main`, `master`, and `notmain`.
