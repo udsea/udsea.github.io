@@ -205,8 +205,22 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
+  - .all-contributorsrc
+  - .claude/
+  - .devcontainer/
+  - .dockerignore
+  - .gemini/
+  - .git-blame-ignore-revs
+  - .gitattributes
+  - .github/
+  - .lycheeignore
+  - .pre-commit-config.yaml
+  - .prettierignore
+  - .prettierrc
+  - AGENTS.md
   - al-folio-upgrade-report.md
   - bin/
+  - CLAUDE.md
   - CONTRIBUTING.md
   - CUSTOMIZE.md
   - Dockerfile
@@ -225,8 +239,10 @@ exclude:
   - purgecss.config.js
   - README.md
   - readme_preview/
+  - requirements.txt
   - gems/
   - migrations/
+  - test/
   - vendor
 keep_files:
   - CNAME
