@@ -5,7 +5,6 @@ on:
     branches:
       - master
       - main
-      - notmain
     paths:
       - "assets/**"
       - "**.bib"
@@ -33,7 +32,6 @@ on:
     branches:
       - master
       - main
-      - notmain
     paths:
       - "assets/**"
       - "**.bib"
@@ -60,15 +58,23 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
@@ -87,6 +93,7 @@ jobs:
       - name: Install JS deps 📦
         run: npm ci
       - name: Update _config.yml ⚙️
+        if: github.event_name != 'pull_request'
         uses: fjogeleit/yaml-update-action@main
         with:
           commitChange: false
@@ -105,8 +112,20 @@ jobs:
           purgecss -c purgecss.config.js
       - name: Disable Pages Jekyll processing
         run: touch _site/.nojekyll
-      - name: Deploy 🚀
-        if: github.event_name != 'pull_request'
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          folder: _site
+          path: _site
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages 🚀
+        id: deployment
+        if: github.event_name != 'pull_request'
+        uses: actions/deploy-pages@v4
