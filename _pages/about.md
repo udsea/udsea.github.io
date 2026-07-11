@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Udbhav. I build evaluation systems for language models and coding agents, with a focus on failure modes that ordinary benchmark scores can miss: format-sensitive safety behavior, shortcut-seeking under pressure, causal reasoning errors, and action-level oversight for autonomous tools.
+I am Udbhav. I study how generative and reasoning systems learn structured transformations under uncertainty, and how to make those transformations reliable, controllable, and robust under shift. I build evaluation systems with a focus on failure modes that ordinary benchmark scores can miss: format-sensitive safety behavior, shortcut-seeking under pressure, causal reasoning errors, and oversight for autonomous tools.
 
 My work is mostly practical and empirical. I like small benchmarks with clear threat models, reproducible runners, explicit limitations, and artifacts that another engineer can inspect. The common thread is control: how to tell whether a model is doing the task for the right reason, whether an evaluation protocol is measuring deployment behavior, and whether an agent's proposed action is safe before it touches the environment.
 
@@ -45,7 +45,7 @@ The purpose of this site is to make my work easier to audit. Each project should
 
 I am especially interested in:
 
-- coding-agent control protocols that inspect proposed actions before execution
+- agent control protocols that inspect proposed actions before execution
 - monitors that separate task success from suspicious behavior
 - LLM safety evaluations where prompt format changes measured behavior
 - causal reasoning benchmarks with known ground truth intervention effects

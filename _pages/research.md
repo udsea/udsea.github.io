@@ -9,9 +9,9 @@ nav_order: 2
 
 ## Research Statement
 
-I am interested in evaluation as a form of measurement engineering: building tasks, protocols, and artifacts that make model behavior legible under realistic pressure.
+I study how generative and reasoning systems learn structured transformations under uncertainty, and how to make those transformations reliable, controllable, and robust under shift. I am interested in evaluation as a form of measurement engineering: building tasks, protocols, and artifacts that make model behavior legible under realistic pressure.
 
-The systems I care about are not only chat models answering static prompts. They are models embedded in workflows: coding agents that can edit files, safety-tuned models whose behavior changes with output format, and reasoning models that can sound coherent while following the wrong causal rule. In those settings, a single aggregate score is rarely enough. Good evaluation should expose where the score came from, what failure modes it hides, and what kind of evidence would change the conclusion.
+The systems I care about are not only chat models answering static prompts. They are models embedded in workflows: autonomous tools that interact with environments, safety-tuned models whose behavior changes with output format, and reasoning models that can sound coherent while following the wrong causal rule. In those settings, a single aggregate score is rarely enough. Good evaluation should expose where the score came from, what failure modes it hides, and what kind of evidence would change the conclusion.
 
 My current work sits around four questions:
 
