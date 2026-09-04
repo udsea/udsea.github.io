@@ -311,12 +311,22 @@ body a:hover {
   line-height: 1.48;
 }
 
-.research-index {
+.profile-card {
   padding-top: 0.85rem;
   border-top: 3px solid var(--teal);
 }
 
-.research-index p:not(.eyebrow) {
+.profile-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin: 0 0 1.15rem;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(100%);
+}
+
+.profile-card p:not(.eyebrow) {
   margin: 0;
   color: var(--ink-muted);
   font-family: "Source Serif 4", Georgia, serif;
@@ -324,7 +334,7 @@ body a:hover {
   line-height: 1.7;
 }
 
-.research-index p + p {
+.profile-card p + p {
   margin-top: 1rem;
 }
 

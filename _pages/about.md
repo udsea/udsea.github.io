@@ -24,10 +24,11 @@ latest_posts:
     <h1>Reliable learned trajectories under optimization.</h1>
     <p class="home-dek">I study reliable trajectory-generating systems: generative models that transform noise into structured objects, and reasoning agents that transform uncertainty into actions or decisions.</p>
   </div>
-  <aside class="research-index">
+  <aside class="profile-card">
+    <img class="profile-photo" src="{{ '/assets/img/udbhav-profile.jpg' | relative_url }}" alt="Portrait of Udbhav">
     <p class="eyebrow">RESEARCH INDEX</p>
     <p>Flow matching<br>Diffusion<br>Causal robustness<br>Reasoning agents<br>AI4Science</p>
-    <p><a href="{{ '/research/' | relative_url }}">Read the research statement</a></p>
+    <p><a href="{{ '/research/' | relative_url }}">Research statement</a><br><a href="mailto:udbhavchitransh@gmail.com">Email</a><br><a href="https://github.com/udsea">GitHub</a></p>
   </aside>
 </section>
 
