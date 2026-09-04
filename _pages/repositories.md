@@ -3,7 +3,7 @@ layout: page
 permalink: /repositories/
 title: repositories
 description: Public GitHub work.
-nav: true
+nav: false
 nav_order: 4
 ---
 

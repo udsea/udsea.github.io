@@ -2,39 +2,39 @@
 layout: page
 title: research
 permalink: /research/
-description: Public work on AI monitoring, evaluation, and model behavior.
+description: Research on reliable evidence about capable AI systems.
 nav: true
 nav_order: 2
 ---
 
-I work on empirical questions around AI monitoring, evaluation, and model behavior. I tend to build small experiments designed to distinguish between competing explanations, then stress-test the result with interventions, controls, and inspectable artifacts.
+I'm interested in a basic problem in AI safety: how can we tell what a capable AI system is doing, and whether our evidence about its behavior remains trustworthy as the system becomes more capable and autonomous?
 
-## Selected Work
+This becomes difficult when models reason in ways we only partially observe, learn from interactions with their overseers, exploit weaknesses in evaluations, or distribute behavior across long trajectories and multiple agents. Monitoring and evaluation methods that work for passive models may fail once the systems being measured can adapt to the measurement process itself.
 
-### [ActionLens]({{ '/projects/actionlens/' | relative_url }})
+I study these problems empirically. My work uses behavioral experiments, causal interventions, adversarial evaluations, and controlled experimental settings to test what different signals actually tell us about model behavior, and where those signals break down.
 
-Pre-execution control for shell and file actions. The project tests whether a monitor can gather lightweight environment evidence before approving a proposed action, instead of relying on transcript text alone.
+## 2026
 
-### [Format-Sensitivity Eval]({{ '/projects/format-sensitivity-eval/' | relative_url }})
+### Do Thoughts Cause Lies?
 
-A replication study of how response format changes observed persuasion-safety behavior. It compares forced-choice and free-form generation under the same underlying prompt set.
+An empirical study of whether reasoning associated with deceptive behavior is causally involved in the resulting output.
 
-### [Sentinel]({{ '/projects/sentinel/' | relative_url }})
+_Research note._
 
-An evaluation harness for coding agents with executable graders, behavioral monitors, traces, and exported artifacts. It keeps task success distinct from monitor concerns so both can be examined directly.
+### Watcher&rsquo;s Echo
 
-### [CausalBench-LLM]({{ '/projects/causalbench-llm/' | relative_url }})
+An empirical project on what agents can learn about an overseer or monitor through repeated feedback, and whether adaptation is specific to the monitor or reflects generic feedback learning.
 
-A synthetic causal-reasoning benchmark with known graph structure and intervention effects. The goal is to distinguish causal reasoning from observational pattern matching using deterministic scoring.
+_Research note._
 
-## Ongoing Work
+### HackTrace
 
-### [PressureTrace]({{ '/projects/pressuretrace/' | relative_url }})
+Work on reward-hacking behavior, attribution, and how exploitative strategies emerge or propagate.
 
-An active research scaffold for studying how optimization pressure can shift reasoning and coding systems from robust task solving toward shortcut-seeking or oversight-evasive behavior.
+_Project._
 
-## Other Directions
+## Earlier Work
 
-I also keep technical notes and early experiments on flow matching and diffusion. They are not a separate research claim yet; public artifacts will appear when the experiments and protocol are ready to stand on their own.
+[ActionLens]({{ '/projects/actionlens/' | relative_url }}) studies pre-execution control for shell and file actions. [Format-Sensitivity Eval]({{ '/projects/format-sensitivity-eval/' | relative_url }}) examines how response format changes observed safety behavior. [Sentinel]({{ '/projects/sentinel/' | relative_url }}) is an evaluation harness for coding agents with executable graders, monitors, and traces. [CausalBench-LLM]({{ '/projects/causalbench-llm/' | relative_url }}) is a synthetic causal-reasoning benchmark with known intervention effects.
 
-<p><a href="{{ '/projects/' | relative_url }}">View all projects</a></p>
+<p><a href="{{ '/projects/' | relative_url }}">View earlier projects</a></p>

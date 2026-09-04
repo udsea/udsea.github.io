@@ -2,8 +2,8 @@
 layout: default
 title: projects
 permalink: /projects/
-description: Selected work on learned trajectories, model reliability, control, and evaluation.
-nav: true
+description: Earlier public projects on AI monitoring, evaluation, control, and causal reasoning.
+nav: false
 nav_order: 3
 ---
 

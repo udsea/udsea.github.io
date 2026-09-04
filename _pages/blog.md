@@ -2,7 +2,7 @@
 layout: default
 permalink: /blog/
 title: notes
-nav: true
+nav: false
 nav_order: 5
 pagination:
   enabled: true

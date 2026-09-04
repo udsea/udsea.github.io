@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Reframed the site around reliable learned trajectories, spanning generative models and reasoning agents.
+Published the initial project index and research-site structure.
