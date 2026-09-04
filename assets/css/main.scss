@@ -338,38 +338,95 @@ body a:hover {
   margin-top: 1rem;
 }
 
-.home-body {
-  max-width: 48rem;
+.home-section {
+  max-width: 55rem;
   padding: 4.25rem 0;
+  border-bottom: 1px solid var(--rule);
 }
 
-.home-body h2 {
-  margin-top: 3.4rem;
+.home-section-header {
+  margin-bottom: 1.65rem;
 }
 
-.home-body + h2 {
-  margin-top: 0;
+.home-section-header .eyebrow {
+  margin-bottom: 0.72rem;
 }
 
-.home-body ~ h2,
-.home-body ~ .news,
-.home-body ~ .social {
-  max-width: 48rem;
-}
-
-.home-body ~ h2 {
-  margin: 2.5rem 0 1rem;
-  color: var(--teal);
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 0.7rem;
+.home-section h2 {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
   font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  line-height: 1.18;
 }
 
-.home-body ~ .news,
-.home-body ~ .post-list {
-  margin-top: 1rem;
+.home-work-list {
+  border-top: 1px solid var(--rule);
+}
+
+.home-work {
+  display: grid;
+  grid-template-columns: 9.5rem minmax(0, 1fr);
+  gap: 1.7rem;
+  padding: 1.7rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.home-work-meta {
+  margin: 0;
+  padding-top: 0.35rem;
+  color: var(--ink-muted);
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.45;
+}
+
+.home-work h3 {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(1.35rem, 2.3vw, 1.75rem);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.home-work h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-work h3 a:hover {
+  color: var(--blue);
+}
+
+.home-work div > p {
+  max-width: 39rem;
+  margin: 0.62rem 0 0;
+  color: var(--ink-muted);
+}
+
+.home-section-link {
+  margin: 1.35rem 0 0;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.69rem;
+  font-weight: 500;
+}
+
+.home-about {
+  max-width: 48rem;
+  border-bottom: 0;
+}
+
+.home-about > p {
+  max-width: 44rem;
+  margin: 0;
+  color: var(--ink-muted);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.55;
 }
 
 .notes-index,
@@ -590,8 +647,13 @@ footer.sticky-bottom .container {
     padding-bottom: 3.2rem;
   }
 
-  .home-body {
+  .home-section {
     padding: 3rem 0;
+  }
+
+  .home-work {
+    grid-template-columns: 1fr;
+    gap: 0.82rem;
   }
 
   .note-entry,

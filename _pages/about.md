@@ -2,68 +2,77 @@
 layout: about
 title: home
 permalink: /
-subtitle: "I study reliable trajectory-generating systems: generative models that transform noise into structured objects, and reasoning agents that transform uncertainty into actions or decisions."
+subtitle: "Empirical research on AI monitoring, evaluation, and model behavior."
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
 <section class="home-hero">
   <div>
-    <p class="eyebrow">RESEARCHER / BUILDER</p>
-    <h1>Reliable learned trajectories under optimization.</h1>
-    <p class="home-dek">I study reliable trajectory-generating systems: generative models that transform noise into structured objects, and reasoning agents that transform uncertainty into actions or decisions.</p>
+    <p class="eyebrow">UDBHAV CHITRANSH</p>
+    <h1>AI monitoring, evaluation, and model behavior.</h1>
+    <p class="home-dek">I build small empirical studies to understand what models do, what their reasoning reveals, and which signals remain useful under intervention. I am especially interested in monitoring and control for increasingly autonomous agents.</p>
   </div>
   <aside class="profile-card">
     <img class="profile-photo" src="{{ '/assets/img/udbhav-profile.jpg' | relative_url }}" alt="Portrait of Udbhav">
-    <p class="eyebrow">RESEARCH INDEX</p>
-    <p>Flow matching<br>Diffusion<br>Causal robustness<br>Reasoning agents<br>AI4Science</p>
-    <p><a href="{{ '/research/' | relative_url }}">Research statement</a><br><a href="mailto:udbhavchitransh@gmail.com">Email</a><br><a href="https://github.com/udsea">GitHub</a></p>
+    <p class="eyebrow">INDEPENDENT RESEARCH</p>
+    <p><a href="{{ '/research/' | relative_url }}">Research</a><br><a href="mailto:udbhavchitransh@gmail.com">Email</a><br><a href="https://github.com/udsea">GitHub</a></p>
   </aside>
 </section>
 
-<div class="home-body">
+<section class="home-section">
+  <header class="home-section-header">
+    <p class="eyebrow">SELECTED WORK</p>
+    <h2>Research artifacts</h2>
+  </header>
+  <div class="home-work-list">
+    <article class="home-work">
+      <p class="home-work-meta">CONTROL / 2026</p>
+      <div>
+        <h3><a href="{{ '/projects/actionlens/' | relative_url }}">ActionLens</a></h3>
+        <p>Pre-execution control for shell and file actions, testing whether lightweight environment evidence can make oversight more useful than transcript review alone.</p>
+      </div>
+    </article>
+    <article class="home-work">
+      <p class="home-work-meta">EVALUATION / 2026</p>
+      <div>
+        <h3><a href="{{ '/projects/format-sensitivity-eval/' | relative_url }}">Format-Sensitivity Eval</a></h3>
+        <p>A compact replication study of how forced-choice and free-form response formats can change observed safety behavior.</p>
+      </div>
+    </article>
+    <article class="home-work">
+      <p class="home-work-meta">MONITORING / 2026</p>
+      <div>
+        <h3><a href="{{ '/projects/sentinel/' | relative_url }}">Sentinel</a></h3>
+        <p>An evaluation harness for coding agents that keeps task success, behavioral monitors, traces, and executable grading artifacts separate.</p>
+      </div>
+    </article>
+    <article class="home-work">
+      <p class="home-work-meta">CAUSAL REASONING / 2026</p>
+      <div>
+        <h3><a href="{{ '/projects/causalbench-llm/' | relative_url }}">CausalBench-LLM</a></h3>
+        <p>A synthetic benchmark for testing causal reasoning with known intervention effects and deterministic evaluation.</p>
+      </div>
+    </article>
+  </div>
+  <p class="home-section-link"><a href="{{ '/research/' | relative_url }}">View the research index</a></p>
+</section>
 
-<p>I am Udbhav. I study reliable trajectory-generating systems: generative models that transform noise into structured objects, and reasoning agents that transform uncertainty into actions or decisions. My focus is robustness, controllability, and detecting shortcut behavior under optimization.</p>
-
-<p>I use two main testbeds. The first is flow-based generative modeling, including diffusion and flow matching, where I ask how learned trajectories can be steered, interpreted, and trusted as they generate structured outputs. The second is reasoning and agentic systems, where I ask how models choose actions, exploit shortcuts, or fail under pressure.</p>
-
-<p>This gives me one spine across diffusion, flow matching, causal robustness, RL reasoning, interpretability, agent reliability, and AI4Science: understand learned trajectories under optimization well enough to control them.</p>
-
-<h2>Purpose</h2>
-
-<p>The purpose of this site is to make the work legible across both testbeds. Each project should eventually answer four questions:</p>
-
-<ul>
-  <li>What trajectory or decision process is being studied?</li>
-  <li>What objective, conditioning signal, or pressure shapes it?</li>
-  <li>What does the current evidence support about reliability or control?</li>
-  <li>Where might the system be taking a shortcut?</li>
-</ul>
-
-<h2>Current Direction</h2>
-
-<p>I am especially interested in:</p>
-
-<ul>
-  <li>flow matching and diffusion for controllable generation</li>
-  <li>learned trajectories in scientific domains and AI4Science</li>
-  <li>causal robustness and intervention-based evaluation</li>
-  <li>RL and reasoning systems under optimization pressure</li>
-  <li>interpretability tools for trajectories and actions</li>
-  <li>agentic reliability and pre-execution oversight</li>
-</ul>
-
-<p>For now, the best public links are email and GitHub.</p>
-
-</div>
+<section class="home-section home-about">
+  <header class="home-section-header">
+    <p class="eyebrow">ABOUT</p>
+    <h2>Outside the lab</h2>
+  </header>
+  <p>When I am not doing research, I am usually reading, taking photographs, watching anime, or training a diffusion model I definitely did not need to train.</p>
+</section>
