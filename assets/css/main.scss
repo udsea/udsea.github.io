@@ -1,0 +1,620 @@
+---
+---
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap");
+
+:root {
+  --ink: #18232d;
+  --ink-muted: #63707a;
+  --paper: #fcfdfd;
+  --paper-soft: #f4f7f8;
+  --rule: #d9e0e3;
+  --blue: #2867c6;
+  --teal: #0d766f;
+  --content-width: 72rem;
+}
+
+html {
+  background: var(--paper);
+}
+
+body {
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body a {
+  color: var(--blue);
+  text-decoration-color: rgb(40 103 198 / 55%);
+  text-underline-offset: 0.18em;
+}
+
+body a:hover {
+  color: var(--teal);
+}
+
+#navbar {
+  min-height: 5.15rem;
+  padding: 0;
+  border-bottom: 1px solid var(--rule);
+  background: rgb(252 253 253 / 94%);
+}
+
+#navbar .container {
+  display: flex;
+  width: min(calc(100% - 3rem), var(--content-width));
+  min-height: 5.15rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0;
+}
+
+#navbar .navbar-brand {
+  display: flex;
+  min-width: 11rem;
+  flex-direction: column;
+  gap: 0.08rem;
+  margin: 0;
+  color: var(--ink) !important;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1;
+  text-decoration: none;
+}
+
+#navbar .navbar-brand::after {
+  color: var(--teal);
+  content: "RESEARCH NOTES";
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+#navbar .container:not(:has(.navbar-brand))::before {
+  min-width: 11rem;
+  color: var(--ink);
+  content: "Udbhav";
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+#navbar .container:not(:has(.navbar-brand))::after {
+  position: absolute;
+  margin-top: 2rem;
+  color: var(--teal);
+  content: "RESEARCH NOTES";
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+#navbar .navbar-collapse {
+  flex-grow: 0;
+}
+
+#navbar .navbar-menu-list {
+  gap: 1.35rem;
+}
+
+#navbar .navbar-nav .nav-item .nav-link,
+#navbar #search-toggle .nav-link {
+  position: relative;
+  padding: 0.45rem 0;
+  color: var(--ink-muted) !important;
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#navbar .navbar-nav .nav-item .nav-link:hover,
+#navbar .navbar-nav .nav-item.active > .nav-link {
+  color: var(--ink) !important;
+}
+
+#navbar .navbar-nav .nav-item.active > .nav-link::after {
+  position: absolute;
+  right: 0;
+  bottom: 0.08rem;
+  left: 0;
+  height: 2px;
+  background: var(--blue);
+  content: "";
+}
+
+#navbar .navbar-toggler {
+  border: 0;
+}
+
+.container.mt-5 {
+  width: min(calc(100% - 3rem), var(--content-width));
+  max-width: var(--content-width);
+  margin-top: clamp(3.2rem, 6vw, 6.4rem) !important;
+  padding: 0;
+}
+
+.post {
+  max-width: 55rem;
+}
+
+.post-header {
+  padding-bottom: 2.7rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.post-header .post-title,
+.post-header h1 {
+  max-width: 16ch;
+  margin: 0;
+  color: var(--ink);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(2.65rem, 5vw, 4.85rem);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.03;
+}
+
+.post-header .desc,
+.post-header .post-description {
+  max-width: 43rem;
+  margin: 1.45rem 0 0;
+  color: var(--ink-muted);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(1.15rem, 2vw, 1.42rem);
+  line-height: 1.48;
+}
+
+.post-meta,
+.post-tags {
+  margin: 1.15rem 0 0;
+  color: var(--ink-muted);
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.68rem;
+  line-height: 1.55;
+}
+
+.post-meta a,
+.post-tags a {
+  color: inherit;
+}
+
+.post article,
+.post .post-content {
+  padding-top: 3rem;
+}
+
+.post article p,
+.post .post-content p {
+  margin: 0 0 1.42rem;
+}
+
+.post article h2,
+.post .post-content h2 {
+  margin: 3.4rem 0 1rem;
+  color: var(--ink);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(1.75rem, 3vw, 2.45rem);
+  font-weight: 500;
+  line-height: 1.18;
+}
+
+.post article h3,
+.post .post-content h3 {
+  margin: 2.2rem 0 0.8rem;
+  color: var(--ink);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.post article ul,
+.post article ol,
+.post .post-content ul,
+.post .post-content ol {
+  margin: 1.35rem 0 1.5rem;
+  padding-left: 1.25rem;
+}
+
+.post article li,
+.post .post-content li {
+  margin: 0.58rem 0;
+  padding-left: 0.24rem;
+}
+
+.post article li::marker,
+.post .post-content li::marker {
+  color: var(--teal);
+}
+
+.post article blockquote,
+.post .post-content blockquote {
+  margin: 2rem 0;
+  padding: 0.2rem 0 0.2rem 1.35rem;
+  border-left: 3px solid var(--teal);
+  color: var(--ink-muted);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.22rem;
+}
+
+.post article pre,
+.post .post-content pre {
+  margin: 1.8rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--rule);
+  border-radius: 0;
+  background: var(--paper-soft);
+}
+
+.post article img,
+.post .post-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.post:has(.home-hero) > .post-header {
+  display: none;
+}
+
+.post:has(.home-hero) article {
+  padding-top: 0;
+}
+
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 14.5rem;
+  gap: clamp(2rem, 6vw, 6.5rem);
+  align-items: start;
+  padding-bottom: 4.6rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  color: var(--teal);
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.35;
+}
+
+.home-hero h1 {
+  max-width: 14ch;
+  margin: 0;
+  color: var(--ink);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(2.8rem, 5.8vw, 5.75rem);
+  font-weight: 500;
+  line-height: 1.02;
+}
+
+.home-dek {
+  max-width: 43rem;
+  margin: 1.8rem 0 0;
+  color: var(--ink-muted);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(1.18rem, 2vw, 1.45rem);
+  line-height: 1.48;
+}
+
+.research-index {
+  padding-top: 0.85rem;
+  border-top: 3px solid var(--teal);
+}
+
+.research-index p:not(.eyebrow) {
+  margin: 0;
+  color: var(--ink-muted);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.research-index p + p {
+  margin-top: 1rem;
+}
+
+.home-body {
+  max-width: 48rem;
+  padding: 4.25rem 0;
+}
+
+.home-body h2 {
+  margin-top: 3.4rem;
+}
+
+.home-body + h2 {
+  margin-top: 0;
+}
+
+.home-body ~ h2,
+.home-body ~ .news,
+.home-body ~ .social {
+  max-width: 48rem;
+}
+
+.home-body ~ h2 {
+  margin: 2.5rem 0 1rem;
+  color: var(--teal);
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-body ~ .news,
+.home-body ~ .post-list {
+  margin-top: 1rem;
+}
+
+.notes-index,
+.projects-index {
+  max-width: 62rem;
+}
+
+.notes-index-header,
+.projects-index-header {
+  padding-bottom: 2.7rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.notes-index-header h1,
+.projects-index-header h1 {
+  max-width: 16ch;
+  margin: 0;
+  color: var(--ink);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(2.8rem, 5vw, 4.85rem);
+  font-weight: 500;
+  line-height: 1.03;
+}
+
+.notes-index-header p:last-child,
+.projects-index-header p:last-child {
+  max-width: 38rem;
+  margin: 1.15rem 0 0;
+  color: var(--ink-muted);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.22rem;
+}
+
+.note-entry,
+.project-entry {
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 1.7rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.note-entry-meta,
+.project-entry-meta {
+  padding-top: 0.38rem;
+  color: var(--ink-muted);
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.68rem;
+  line-height: 1.5;
+}
+
+.note-entry h2,
+.project-entry h2 {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(1.45rem, 2.4vw, 1.82rem);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.note-entry h2 a,
+.project-entry h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.note-entry h2 a:hover,
+.project-entry h2 a:hover {
+  color: var(--blue);
+}
+
+.note-entry p,
+.project-entry p {
+  max-width: 42rem;
+  margin: 0.68rem 0 0;
+  color: var(--ink-muted);
+}
+
+.entry-tags {
+  color: var(--teal) !important;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.67rem;
+}
+
+.container.mt-5 > .row {
+  align-items: flex-start;
+}
+
+.container.mt-5 > .row > .col-sm-3 {
+  flex: 0 0 11.5rem;
+  max-width: 11.5rem;
+  padding: 0;
+}
+
+.container.mt-5 > .row > .col-sm-9 {
+  flex: 1 1 0;
+  max-width: 43.5rem;
+  margin-left: clamp(2rem, 6vw, 6rem);
+  padding: 0;
+}
+
+#toc-sidebar {
+  top: 2rem;
+  max-height: calc(100vh - 4rem);
+  overflow: auto;
+  padding: 0 1.35rem 0 0;
+  border-right: 1px solid var(--rule);
+}
+
+#toc-sidebar::before {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--teal);
+  content: "ON THIS PAGE";
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.63rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+#toc-sidebar .toc-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#toc-sidebar .toc-list-item {
+  margin: 0 0 0.48rem;
+}
+
+#toc-sidebar .toc-link {
+  color: var(--ink-muted);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 0.83rem;
+  line-height: 1.36;
+  text-decoration: none;
+}
+
+#toc-sidebar .is-active-link,
+#toc-sidebar .toc-link:hover {
+  color: var(--blue);
+}
+
+footer.sticky-bottom {
+  width: min(calc(100% - 3rem), var(--content-width));
+  margin: 0 auto !important;
+  padding: 1.45rem 0 2.35rem;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-muted);
+  background: transparent;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.65rem;
+}
+
+footer.sticky-bottom .container {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+
+@media (max-width: 760px) {
+  #navbar,
+  #navbar .container {
+    min-height: 4.5rem;
+  }
+
+  #navbar .container {
+    width: calc(100% - 2.4rem);
+  }
+
+  #navbar .navbar-brand,
+  #navbar .container:not(:has(.navbar-brand))::before {
+    min-width: 0;
+    font-size: 1.18rem;
+  }
+
+  #navbar .container:not(:has(.navbar-brand))::after {
+    margin-top: 1.8rem;
+  }
+
+  #navbar .navbar-collapse {
+    position: absolute;
+    top: 4.5rem;
+    right: 1.2rem;
+    z-index: 20;
+    min-width: 11rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    box-shadow: 0 10px 24px rgb(24 35 45 / 9%);
+  }
+
+  #navbar .navbar-menu-list {
+    gap: 0;
+  }
+
+  #navbar .navbar-nav .nav-item .nav-link {
+    padding: 0.5rem 0;
+  }
+
+  .container.mt-5 {
+    width: calc(100% - 2.4rem);
+    margin-top: 3rem !important;
+  }
+
+  .post-header .post-title,
+  .post-header h1,
+  .home-hero h1,
+  .notes-index-header h1,
+  .projects-index-header h1 {
+    font-size: clamp(2.55rem, 13vw, 4rem);
+  }
+
+  .home-hero {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+    padding-bottom: 3.2rem;
+  }
+
+  .home-body {
+    padding: 3rem 0;
+  }
+
+  .note-entry,
+  .project-entry {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+    padding: 1.6rem 0;
+  }
+
+  .container.mt-5 > .row {
+    display: block;
+  }
+
+  .container.mt-5 > .row > .col-sm-3,
+  .container.mt-5 > .row > .col-sm-9 {
+    max-width: none;
+    margin: 0;
+  }
+
+  #toc-sidebar {
+    position: static !important;
+    max-height: none;
+    margin-bottom: 1.5rem;
+    padding: 0 0 1rem;
+    border-right: 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  #toc-sidebar .toc-list {
+    display: none;
+  }
+
+  footer.sticky-bottom {
+    width: calc(100% - 2.4rem);
+  }
+}

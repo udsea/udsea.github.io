@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Added a research statement, homepage bio, and selected project pages.
+Reframed the site around reliable learned trajectories, spanning generative models and reasoning agents.

@@ -9,3 +9,4 @@ github_repos:
   - udsea/sentinel
   - udsea/format-sensitivity-eval
   - udsea/causalbench-llm
+  - udsea/tinker.jl
