@@ -33,6 +33,13 @@ latest_posts:
     <h2>Research</h2>
   </header>
   <div class="home-work-list">
+    <article class="home-work is-new">
+      <p class="home-work-meta">Research note / Nov 2026</p>
+      <div>
+        <h3><a href="{{ '/blog/2026/swarm-cheating/' | relative_url }}">Copy, Paste, Cheat: How a Hack Goes Viral in an Agent Swarm</a><span class="new-badge"><span class="new-dot"></span>NEW</span></h3>
+        <p>48 coding agents share a forum; a test-gaming trick spreads from 17 to 74 of 96 impossible tasks. A code gate stops it. Activation probes catch it in-domain but not on a new domain.</p>
+      </div>
+    </article>
     <article class="home-work">
       <p class="home-work-meta">Research note / 2026</p>
       <div>

@@ -14,6 +14,12 @@ I study these problems empirically. My work uses behavioral experiments, causal 
 
 ## 2026
 
+### [Copy, Paste, Cheat: How a Hack Goes Viral in an Agent Swarm]({{ '/blog/2026/swarm-cheating/' | relative_url }})
+
+48 coding agents share a forum; a test-gaming trick spreads from 17 to 74 of 96 impossible tasks. A code gate stops it. Activation probes catch it in-domain but not on a new domain.
+
+_Research note, November 2026._
+
 ### Do Thoughts Cause Lies?
 
 Causal interventions on reasoning and deceptive behavior.

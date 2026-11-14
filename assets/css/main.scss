@@ -14,6 +14,24 @@
   --content-width: 72rem;
 }
 
+// Set by the theme toggle (al_folio_core theme.js), which also resolves "system".
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #e4e9ec;
+  --ink-muted: #9aa7b0;
+  --paper: #12181d;
+  --paper-soft: #1a2228;
+  --rule: #2c373e;
+  --blue: #6fa3ee;
+  --teal: #4fbfb4;
+}
+
+// Charts ship in a light and a dark version; show the one matching the theme.
+html[data-theme="dark"] .only-light,
+html:not([data-theme="dark"]) .only-dark {
+  display: none;
+}
+
 html {
   background: var(--paper);
 }
@@ -33,7 +51,7 @@ body * {
 
 body a {
   color: var(--blue);
-  text-decoration-color: rgb(40 103 198 / 55%);
+  text-decoration-color: color-mix(in srgb, var(--blue) 55%, transparent);
   text-underline-offset: 0.18em;
 }
 
@@ -45,7 +63,7 @@ body a:hover {
   min-height: 5.15rem;
   padding: 0;
   border-bottom: 1px solid var(--rule);
-  background: rgb(252 253 253 / 94%);
+  background: color-mix(in srgb, var(--paper) 94%, transparent);
 }
 
 #navbar .container {
@@ -138,6 +156,67 @@ body a:hover {
 
 #navbar .navbar-toggler {
   border: 0;
+}
+
+#navbar #light-toggle {
+  padding: 0.45rem 0;
+  border: 0;
+  color: var(--ink-muted);
+  background: none;
+}
+
+#navbar #light-toggle:hover {
+  color: var(--ink);
+}
+
+// One icon at a time: the moon in light mode, the sun in dark mode (what a click switches to).
+// The theme's own rules for this live in a stylesheet this site replaces.
+#light-toggle-system,
+html:not([data-theme="dark"]) #light-toggle-light,
+html[data-theme="dark"] #light-toggle-dark {
+  display: none;
+}
+
+// Latest item on the homepage: a solid pill with a pulsing dot, right after the title.
+.new-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: 0.6rem;
+  vertical-align: 0.3em;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  line-height: 1.5;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  color: var(--paper);
+  background: var(--teal);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.new-dot {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--paper);
+  animation: new-pulse 1.8s ease-out infinite;
+}
+
+@keyframes new-pulse {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--paper) 80%, transparent);
+  }
+  70%,
+  100% {
+    box-shadow: 0 0 0 0.4rem transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .new-dot {
+    animation: none;
+  }
 }
 
 .container.mt-5 {
@@ -269,7 +348,8 @@ body a:hover {
   display: none;
 }
 
-.post:has(.home-hero) article {
+// Direct child only: the research rows are <article>s too and keep their padding.
+.post:has(.home-hero) > article {
   padding-top: 0;
 }
 
@@ -278,7 +358,7 @@ body a:hover {
   grid-template-columns: minmax(0, 1fr) 14.5rem;
   gap: clamp(2rem, 6vw, 6.5rem);
   align-items: start;
-  padding-bottom: 4.6rem;
+  padding-bottom: 3rem;
   border-bottom: 1px solid var(--rule);
 }
 
@@ -302,7 +382,7 @@ body a:hover {
   line-height: 1.02;
 }
 
-.home-dek {
+.post .home-dek {
   max-width: 43rem;
   margin: 1.8rem 0 0;
   color: var(--ink-muted);
@@ -340,19 +420,19 @@ body a:hover {
 
 .home-section {
   max-width: 55rem;
-  padding: 4.25rem 0;
+  padding: 2.75rem 0;
   border-bottom: 1px solid var(--rule);
 }
 
 .home-section-header {
-  margin-bottom: 1.65rem;
+  margin-bottom: 1.1rem;
 }
 
 .home-section-header .eyebrow {
   margin-bottom: 0.72rem;
 }
 
-.home-section h2 {
+.post .home-section h2 {
   margin: 0;
   color: var(--ink);
   font-family: "Source Serif 4", Georgia, serif;
@@ -368,12 +448,13 @@ body a:hover {
 .home-work {
   display: grid;
   grid-template-columns: 9.5rem minmax(0, 1fr);
-  gap: 1.7rem;
-  padding: 1.7rem 0;
+  gap: 1.4rem;
+  padding: 1.2rem 0;
   border-bottom: 1px solid var(--rule);
 }
 
-.home-work-meta {
+// .post prefix: the homepage sits inside .post, whose article p/h3 rules would otherwise win.
+.post .home-work-meta {
   margin: 0;
   padding-top: 0.35rem;
   color: var(--ink-muted);
@@ -384,7 +465,7 @@ body a:hover {
   line-height: 1.45;
 }
 
-.home-work h3 {
+.post .home-work h3 {
   margin: 0;
   color: var(--ink);
   font-family: "Source Serif 4", Georgia, serif;
@@ -408,7 +489,7 @@ body a:hover {
   color: var(--ink-muted);
 }
 
-.home-section-link {
+.post .home-section-link {
   margin: 1.35rem 0 0;
   font-family: "IBM Plex Mono", ui-monospace, monospace;
   font-size: 0.69rem;
@@ -420,7 +501,7 @@ body a:hover {
   border-bottom: 0;
 }
 
-.home-about > p {
+.post .home-about > p {
   max-width: 44rem;
   margin: 0;
   color: var(--ink-muted);
@@ -512,10 +593,6 @@ body a:hover {
   font-size: 0.67rem;
 }
 
-.container.mt-5 > .row {
-  align-items: flex-start;
-}
-
 .container.mt-5 > .row > .col-sm-3 {
   flex: 0 0 11.5rem;
   max-width: 11.5rem;
@@ -524,9 +601,18 @@ body a:hover {
 
 .container.mt-5 > .row > .col-sm-9 {
   flex: 1 1 0;
+  min-width: 0; // let the column shrink below its widest table or code line
   max-width: 43.5rem;
   margin-left: clamp(2rem, 6vw, 6rem);
   padding: 0;
+}
+
+// Wide tables and code scroll inside the column instead of widening the page.
+.post table,
+.post pre {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 #toc-sidebar {
@@ -550,8 +636,21 @@ body a:hover {
 
 #toc-sidebar .toc-list {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 0.9rem; // clear tocbot's left progress bar
   list-style: none;
+}
+
+#toc-sidebar .toc-list .toc-list {
+  margin-top: 0.48rem;
+  padding-left: 0.8rem;
+}
+
+#toc-sidebar .toc-link::before {
+  background-color: var(--rule);
+}
+
+#toc-sidebar .is-active-link::before {
+  background-color: var(--blue);
 }
 
 #toc-sidebar .toc-list-item {
@@ -648,7 +747,7 @@ footer.sticky-bottom .container {
   }
 
   .home-section {
-    padding: 3rem 0;
+    padding: 2.25rem 0;
   }
 
   .home-work {
