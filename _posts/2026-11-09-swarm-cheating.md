@@ -218,3 +218,20 @@ All counts are from the project's decision log (`logs/_decisions.log`); the line
 | Sparse-autoencoder transfer, fraction unexplained | 0.44–0.48 (limit 0.30) | — | 141–144 |
 | Attention heads rebuilt on new domain (keywords) | 0.551 (0.843) | 1 | 175 |
 | Hidden folder: agents that looked outside their folder | 0 (1,103 file operations) | 3 | run files |
+
+## Citation
+
+A full paper is on the way. Until then, please cite this note:
+
+> Chitransh, Udbhav. "Copy, Paste, Cheat: How a Hack Goes Viral in an Agent Swarm." Research note, November 2026. https://udsea.github.io/blog/2026/swarm-cheating/
+
+```bibtex
+@misc{chitransh2026swarmcheating,
+  author       = {Chitransh, Udbhav},
+  title        = {Copy, Paste, Cheat: How a Hack Goes Viral in an Agent Swarm},
+  year         = {2026},
+  month        = nov,
+  howpublished = {Research note},
+  url          = {https://udsea.github.io/blog/2026/swarm-cheating/}
+}
+```
